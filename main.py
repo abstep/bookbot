@@ -1,14 +1,14 @@
 import sys
 from sys import argv
-from bookbot.stats import count_words
-from bookbot.stats import count_characters
-from bookbot.stats import sort_characters
+from stats import count_words
+from stats import count_characters
+from stats import sort_characters
 
 def get_path():
     if len(argv) > 1:
         return argv[1]
     else:
-        print("Usage: python3 main.py <file_path>")
+        print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
 
 def get_book_text(path):
